@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 type Agent = { id: string; name: string; specialty: string; status: string; description: string };
 type Task = { id: string; title: string; description: string; status: string; created_at: string };
 
-const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+const API = process.env.NEXT_PUBLIC_API_URL ??
 const TENANT = process.env.NEXT_PUBLIC_DEMO_TENANT ?? "entreprise-demo";
 
 export default function Dashboard() {
